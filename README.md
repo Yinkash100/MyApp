@@ -1,3 +1,14 @@
+# Important information for using the application
+
+1. The server at [Reqres](https://reqres.in/) sometimes returns 500. I've created an interceptor that routes the frontend to appropriate page. In this case, please wait for a moment until the server is up again.
+
+2. You can signup with any email or password, but you have to login with details provided by the e.g `{
+   "email": "eve.holt@reqres.in",
+   "password": "cityslicka"
+   }`
+3. Provided login details do pass the specified validation. So password validation for login was removed. (login password shouldn't have validation though )  
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
