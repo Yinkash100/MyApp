@@ -1,0 +1,39 @@
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  border: none;
+  transition: all 0.2s;
+  position: relative;
+  font-weight: bolder;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background: $blue;
+  border-radius: 5px;
+  padding: 15px 30px;
+  @include respond(tab-land) {
+      padding: 7.5px 17px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+  &:hover {
+    transform: translateY(-0.05rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+    border: var(--color-black);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: unset;
+  }
+}
+
+
+
+

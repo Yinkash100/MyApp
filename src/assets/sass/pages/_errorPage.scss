@@ -1,0 +1,93 @@
+.errorPage{
+  .app__container-error {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 15vh;
+    //background-image: url("../../assets/images/Image1.png");
+    //background-size: cover;
+    font-family: var(--font-base);
+    background-repeat: no-repeat;
+  }
+
+  .app__error-content {
+    display: block;
+    width: 70vw;
+    height: 80vh;
+    margin: 0 auto;
+    //background-image: url("../../assets/images/ErrorMessage.png");
+    //background-position: center;
+    //background-size: 100% 100%;
+    //background-repeat: no-repeat;
+    position: relative;
+  }
+  .app__error-content-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100% !important;
+    transform: translate(-50%, -50%);
+  }
+
+  .error_btn {
+    cursor: pointer;
+    color: var(--color-white);
+    background-color: var(--color-footer);
+    font-family: var(--font-base);
+    /*background-color: rgb(233, 182, 226);*/
+    border: none;
+    font-size: 18px;
+    width: 190px;
+    height: 50px;
+  }
+  .app__error--button {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .app__error--code {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 150px;
+    line-height: 175px;
+    font-weight: 800;
+    color: var(--color-primary);
+  }
+  .app__error--info {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    line-height: 2;
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+
+  .app__error--info-text {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 768px) {
+    .app__error-content {
+      width: 90vw;
+      height: 70vh;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .error_btn {
+      font-size: 15px;
+      width: 140px;
+      height: 50px;
+    }
+    .app__error--code {
+      font-size: 112.5px;
+      line-height: 175px;
+    }
+    .app__error--info {
+      font-size: 30px;
+      line-height: 2;
+    }
+  }
+}
