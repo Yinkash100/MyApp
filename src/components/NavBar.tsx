@@ -30,6 +30,8 @@ const NavbarWithSearch = () => {
         if (duration.minutes === 0 && duration.seconds === 0){
             logoutUser();
         }
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [duration])
 
     useEffect(()=>{

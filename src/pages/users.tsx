@@ -23,6 +23,8 @@ const User = () => {
     }
     useEffect(()=>{
         getUsers()
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [currentPageNo])
 
     const handleChangePagination = (event: React.ChangeEvent<unknown>, pageNo: number)=>{
